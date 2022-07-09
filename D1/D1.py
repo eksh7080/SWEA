@@ -98,16 +98,16 @@
 
 # 2056
 
-test = int(input())
-for i in range(1, test+1):
-    birth = input()
-    year = birth[:4]
-    month = birth[4:6]
-    day = birth[6:]
+# test = int(input())
+# for i in range(1, test+1):
+#     birth = input()
+#     year = birth[:4]
+#     month = birth[4:6]
+#     day = birth[6:]
 
-    year = int(year)
-    month = int(month)
-    day = int(day)
+#     year = int(year)
+#     month = int(month)
+#     day = int(day)
 
     # if (month == 1 or month == 3 or month == 5 or month == 7 or month == 8 or month == 10 or month == 12) and (day > 32):
     #     print("-1")
@@ -120,24 +120,70 @@ for i in range(1, test+1):
     # else:
     #     print("#%d"%i,"%04d/%02d/%02d"%(year,month,day))
 
-    if month in [1,3,5,7,8,10,12] and (day > 32):
-        print("#%d -1"%i)
-    elif month in [4,6,9,11] and (day > 30):
-        print("#%d -1"%i)
-    elif month == 2 and day > 28:
-        print("#%d -1"%i)
-    elif month == 00:
-        print("#%d -1"%i)
-    else:
-        print("#%d %04d/%02d/%02d"%(i,year,month,day))
+    # if month in [1,3,5,7,8,10,12] and (day > 32):
+    #     print("#%d -1"%i)
+    # elif month in [4,6,9,11] and (day > 30):
+    #     print("#%d -1"%i)
+    # elif month == 2 and day > 28:
+    #     print("#%d -1"%i)
+    # elif month == 00:
+    #     print("#%d -1"%i)
+    # else:
+    #     print("#%d %04d/%02d/%02d"%(i,year,month,day))
 
+# 2058
+# a = list(map(int,input()))
 
+# sum = 0
+# for i in range(len(a)):
+#     sum += a[i]
+# print(sum)
 
+# 2063
+# n = int(input())
+# a = list(map(int, input().split()))
+# a.sort()
 
+# print(a[n//2])
 
+# 2068
+# test = int(input())
 
+# for i in range(1, test+1):
+#     case = map(int, input().split())
+#     print("#%d"%i, max(case))
 
+# 2070
+# test = int(input())
 
+# for i in range(1, test+1):
 
+#     one,two = input().split() 
 
+#     if one == two:
+#         print("#%d"%i, "=")
+#     elif one > two:
+#         print("#%d"%i, ">")
+#     elif one < two:
+#         print("#%d"%i, "<")
+
+# 2071
+# test = int(input())
+
+# for i in range(1, test+1):
+#     case = list(map(int, input().split()))
+#     print("#%d"%i, "%.1d"%round((sum(case)/len(case))))
+
+# 2072
+# test = int(input())
+
+# for i in range(1, test+1):
+#     num = list(map(int, input().split()))
+#     odd = []
+#     for j in range(len(num)):
+        
+#         if num[j] % 2 != 0:
+#             odd.append(num[j])
+
+#     print("#%d"%i, sum(odd))
 
